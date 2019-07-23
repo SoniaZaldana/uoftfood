@@ -20,8 +20,12 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!--Bold size 16-->
-    <style name="bold_font_16" parent="bold_font">
+    <!--Bold size 20-->
+    <style name="bold_font_28" parent="bold_font">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="regular_font_16" parent="regular_font">
         <item name="android:textSize">16sp</item>
     </style>
 
