@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/name"
+        style="@style/bold_font_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        tools:text="Innis Cafe"
+        />
+
+
+    <TextView
+        android:id="@+id/campus"
+        android:layout_below="@id/name"
+        style="@style/regular_font_14"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="St. George"
+        />
+
+
+    <TextView
+        android:id="@+id/building"
+        style="@style/regular_font_14"
+        android:layout_below="@id/campus"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Innis College"
+        />
+
+
+    <TextView
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:paddingRight="20dp"
+        android:layout_toRightOf="@id/campus"
+        android:paddingLeft="250dp"
+        tools:text="open"
+        />
+
+</RelativeLayout>
