@@ -20,6 +20,7 @@ public class FoodClient implements Callback<List<FoodProvider>> {
     static final String BASE_URL = "https://cobalt.qas.im/api/1.0/";
     static final String API_KEY = BuildConfig.ApiKey;
 
+
     OkHttpClient okHttpClient = new OkHttpClient().newBuilder().addInterceptor(new Interceptor() {
         @Override
         public okhttp3.Response intercept(Chain chain) throws IOException {
@@ -41,7 +42,7 @@ public class FoodClient implements Callback<List<FoodProvider>> {
                                 .addConverterFactory(GsonConverterFactory.create(gson))
                                 .build();
 
-        FoodService foodAPI = retrofit.create(FoodService.class);
+        FoodServiceAPI foodAPI = retrofit.create(FoodServiceAPI.class);
 
         Call<List<FoodProvider>> call = foodAPI.fetchFoodProviders();
         call.enqueue(this);
