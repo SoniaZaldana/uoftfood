@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_family_regular" translatable="false">sans-serif</string>
+    <string name="font_family_light" translatable="false">sans-serif-light</string>
+
+    <!--Regular font-->
+    <style name="regular_font">
+        <item name="android:fontFamily">@string/font_family_regular</item>
+    </style>
+
+    <!--Light font-->
+    <style name="light_font">
+        <item name="android:fontFamily">@string/font_family_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--Bold font-->
+    <style name="bold_font">
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Bold size 16-->
+    <style name="bold_font_16" parent="bold_font">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--Regular font size 16-->
+    <style name="regular_font_14" parent="regular_font">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>
