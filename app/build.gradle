@@ -12,9 +12,14 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            buildConfigField 'String', "ApiKey", MyApiKey
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', "ApiKey", MyApiKey
         }
     }
 }
@@ -25,4 +30,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // for retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+//
+//
+//    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+//    implementation 'com.google.code.gson:gson:2.8.5'
+//    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+//    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+//    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+
 }
