@@ -33,4 +33,32 @@ public class Hours {
     @Expose
     public Day saturday;
 
+    public Day getSunday() {
+
+        return sunday;
+    }
+
+    public Day getMonday() {
+        return monday;
+    }
+
+    public Day getTuesday() {
+        return tuesday;
+    }
+
+    public Day getWednesday() {
+        return wednesday;
+    }
+
+    public Day getThursday() {
+        return thursday;
+    }
+
+    public Day getFriday() {
+        return friday;
+    }
+
+    public Day getSaturday() {
+        return saturday;
+    }
 }

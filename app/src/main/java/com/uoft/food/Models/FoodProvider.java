@@ -58,4 +58,55 @@ public class FoodProvider {
     @Expose
     public List<String> tags = null;
 
+    public String getId() {
+        return id;
+    }
+
+    public String getBuildingId() {
+        return buildingId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getShortName() {
+        return shortName;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public String getCampus() {
+        return campus;
+    }
+
+    public Double getLat() {
+        return lat;
+    }
+
+    public Double getLng() {
+        return lng;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public Hours getHours() {
+        return hours;
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
 }

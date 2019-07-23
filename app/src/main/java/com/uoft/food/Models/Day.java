@@ -15,4 +15,15 @@ public class Day {
     @Expose
     public Integer close;
 
+    public Boolean getClosed() {
+        return closed;
+    }
+
+    public Integer getOpen() {
+        return open;
+    }
+
+    public Integer getClose() {
+        return close;
+    }
 }
