@@ -13,10 +13,10 @@ public class FoodProviderViewHolder extends CommonListItemViewHolder<FoodProvide
     public FoodProviderViewHolder(View itemView) {
         super(itemView);
 
-        nameTextView = (TextView) itemView.findViewById(R.id.name);
-        campusTextView = (TextView) itemView.findViewById(R.id.campus);
-        buildingTextView = (TextView) itemView.findViewById(R.id.building);
-        openTextView = (TextView) itemView.findViewById(R.id.open);
+        nameTextView = itemView.findViewById(R.id.name);
+        campusTextView = itemView.findViewById(R.id.campus);
+        buildingTextView = itemView.findViewById(R.id.building);
+        openTextView = itemView.findViewById(R.id.open);
     }
 
     @Override

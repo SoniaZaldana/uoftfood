@@ -2,8 +2,9 @@ package com.uoft.food.Service;
 
 import com.uoft.food.Models.FoodProvider;
 import java.util.List;
-import retrofit2.Call;
 
+
+/* A class containing different interfaces to deal with callback */
 public class FoodServiceCallBack {
 
     public interface fetchFoodProvidersCallBack {

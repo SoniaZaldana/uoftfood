@@ -15,6 +15,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/* A class creating my client and service calls */
 public class FoodClient {
 
     static final String BASE_URL = "https://cobalt.qas.im/api/1.0/";
