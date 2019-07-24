@@ -53,7 +53,7 @@ public class FoodClient {
     }
 
     /* Fetch all food providers API */
-    public void fetchFoodProviders(FoodServiceCallBack.fetchFoodProvidersCallBack callback) {
+    public void fetchFoodProviders(final FoodServiceCallBack.fetchFoodProvidersCallBack callback) {
         foodAPI = getFoodAPI();
         Call<List<FoodProvider>> call = foodAPI.fetchFoodProviders();
         call.enqueue(new Callback<List<FoodProvider>>() {
