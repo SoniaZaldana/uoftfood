@@ -4,9 +4,9 @@ import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-public abstract class ListItemViewHolder<T extends ListItem> extends RecyclerView.ViewHolder {
+public abstract class CommonListItemViewHolder<T extends ListItem> extends RecyclerView.ViewHolder {
 
-    public ListItemViewHolder(View itemView) {
+    public CommonListItemViewHolder(View itemView) {
         super(itemView);
     }
 

@@ -3,7 +3,7 @@ package com.uoft.food;
 import android.view.View;
 import android.widget.TextView;
 
-public class FoodProviderViewHolder extends ListItemViewHolder<FoodProviderListItem> {
+public class FoodProviderViewHolder extends CommonListItemViewHolder<FoodProviderListItem> {
 
     private TextView nameTextView;
     private TextView campusTextView;
