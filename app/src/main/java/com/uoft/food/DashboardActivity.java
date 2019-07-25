@@ -1,16 +1,20 @@
 package com.uoft.food;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.uoft.food.FoodProviderList.FoodProviderListFragment;
 import com.uoft.food.Models.FoodProvider;
 import com.uoft.food.Service.FoodClient;
@@ -20,14 +24,28 @@ import java.util.List;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    Button listButton;
+    private Button listButton;
+    private NavController navController;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+        // getting the navigation controller
+        navController = Navigation.findNavController(this, R.id.fragment);
+
+        // setting the navigation controller to Bottom nav
+        BottomNavigationView bottomNav = findViewById(R.id.bottomNav);
+
+        NavigationUI.setupWithNavController(bottomNav, navController);
+
+        // Setting up the action bar
+        NavigationUI.setupActionBarWithNavController(this, navController);
+
         listButton = findViewById(R.id.listButton);
-        FoodClient client = new FoodClient();
+        final FoodClient client = new FoodClient();
 
         listButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -45,21 +63,14 @@ public class DashboardActivity extends AppCompatActivity {
                     }
                 });
 
-                FoodProviderListFragment fragment = new FoodProviderListFragment();
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment_container, fragment);
-                transaction.commit();
             }
         });
     }
 
+
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return super.onCreateOptionsMenu(menu);
+    public boolean onSupportNavigateUp() {
+        return NavigationUI.navigateUp(navController, (DrawerLayout) null);
     }
-
-
-
 
 }

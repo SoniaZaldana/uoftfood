@@ -27,6 +27,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
@@ -38,9 +39,14 @@ dependencies {
     // recycler view
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
+    // navigation component
+    implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0-rc02'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0-rc02'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0-rc02'
+    implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0-rc02'
 
-
-
+    // new material design
+    implementation 'com.google.android.material:material:1.0.0'
 
 
 }
