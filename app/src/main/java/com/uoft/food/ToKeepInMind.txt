@@ -1,0 +1,8 @@
+Cool retrofit tutorial:
+ https://www.vogella.com/tutorials/Retrofit/article.html#retrofit
+
+Tutorial for bottom navigation bar:
+https://www.simplifiedcoding.net/android-navigation-tutorial/
+
+Where to get drawables:
+https://www.flaticon.com/free-icons/android

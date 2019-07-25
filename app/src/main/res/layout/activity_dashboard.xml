@@ -13,9 +13,16 @@
         android:layout_weight="1"
         app:navGraph="@navigation/bottom_navigation"
         app:defaultNavHost="true"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-    />
+        android:name="androidx.navigation.fragment.NavHostFragment" />
 
+    <Button
+        android:id="@+id/listButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Food Provider List"
+        tools:text="Food Provider list"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
@@ -25,15 +32,7 @@
         />
 
 
-    <Button
-        android:id="@+id/listButton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Food Provider List"
-        android:visibility="gone"
-        tools:text="Food Provider list"/>
+
 
 
 </LinearLayout>
