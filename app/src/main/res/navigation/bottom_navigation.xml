@@ -16,7 +16,7 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/settingsFragment"
+        android:id="@+id/favouritesFragment"
         android:name="com.uoft.food.FavouritesFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_favourites" />

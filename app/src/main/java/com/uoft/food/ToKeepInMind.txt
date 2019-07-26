@@ -6,3 +6,4 @@ https://www.simplifiedcoding.net/android-navigation-tutorial/
 
 Where to get drawables:
 https://www.flaticon.com/free-icons/android
+https://medium.com/@sasude9/use-vector-images-for-android-171167c3ee3d
