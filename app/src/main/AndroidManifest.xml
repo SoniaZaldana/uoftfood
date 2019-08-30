@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme" >
 
         <activity
-            android:name=".SplashActivity"
+            android:name=".Activities.SplashActivity"
             android:theme="@style/SplashTheme"
             android:screenOrientation="portrait">
 
@@ -27,7 +27,7 @@
 
         </activity>
 
-        <activity android:name=".DashboardActivity" />
+        <activity android:name=".Activities.DashboardActivity" />
 
     </application>
 

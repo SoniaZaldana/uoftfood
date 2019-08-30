@@ -5,7 +5,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
-import com.uoft.food.BaseFragment;
+import com.uoft.food.Fragments.BaseFragment;
 import com.uoft.food.Models.FoodProvider;
 import java.util.List;
 

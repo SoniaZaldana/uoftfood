@@ -8,55 +8,55 @@ public class FoodProvider {
 
     @SerializedName("id")
     @Expose
-    public String id;
+    private String id;
 
     @SerializedName("building_id")
     @Expose
-    public String buildingId;
+    private String buildingId;
 
     @SerializedName("name")
     @Expose
-    public String name;
+    private String name;
 
     @SerializedName("short_name")
     @Expose
-    public String shortName;
+    private String shortName;
 
     @SerializedName("description")
     @Expose
-    public String description;
+    private String description;
 
     @SerializedName("url")
     @Expose
-    public String url;
+    private String url;
 
     @SerializedName("image")
     @Expose
-    public String image;
+    private String image;
 
     @SerializedName("campus")
     @Expose
-    public String campus;
+    private String campus;
 
     @SerializedName("lat")
     @Expose
-    public Double lat;
+    private Double lat;
 
     @SerializedName("lng")
     @Expose
-    public Double lng;
+    private Double lng;
 
     @SerializedName("address")
     @Expose
-    public String address;
+    private String address;
 
     @SerializedName("hours")
     @Expose
-    public Hours hours;
+    private Hours hours;
 
     @SerializedName("tags")
     @Expose
-    public List<String> tags = null;
+    private List<String> tags = null;
 
     public String getId() {
         return id;

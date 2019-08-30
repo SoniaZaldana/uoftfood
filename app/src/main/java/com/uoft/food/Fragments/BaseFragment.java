@@ -1,4 +1,4 @@
-package com.uoft.food;
+package com.uoft.food.Fragments;
 
 import androidx.fragment.app.Fragment;
 

@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.uoft.food.AboutFragment"
+        android:name="com.uoft.food.Fragments.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.uoft.food.HomeFragment"
+        android:name="com.uoft.food.Fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/favouritesFragment"
-        android:name="com.uoft.food.FavouritesFragment"
+        android:name="com.uoft.food.Fragments.FavouritesFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_favourites" />
 </navigation>

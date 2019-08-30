@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -35,7 +36,10 @@ public class FoodProviderListAdapter extends RecyclerView.Adapter<FoodProviderVi
 
     @Override
     public void onBindViewHolder(@NonNull FoodProviderViewHolder holder, int position) {
+        // Get the data model based on position
         FoodProviderListItem foodProvider = foodProviders.get(position);
+
+        // set values
         holder.onBind(foodProvider);
 
     }
