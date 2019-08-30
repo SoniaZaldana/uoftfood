@@ -9,6 +9,7 @@ public class FoodProviderViewHolder extends CommonListItemViewHolder<FoodProvide
     private TextView campusTextView;
     private TextView buildingTextView;
     private TextView openTextView;
+    private View view;
 
     public FoodProviderViewHolder(View itemView) {
         super(itemView);
@@ -17,6 +18,8 @@ public class FoodProviderViewHolder extends CommonListItemViewHolder<FoodProvide
         campusTextView = itemView.findViewById(R.id.campus);
         buildingTextView = itemView.findViewById(R.id.building);
         openTextView = itemView.findViewById(R.id.open);
+        view = itemView;
+
     }
 
     @Override
@@ -29,5 +32,8 @@ public class FoodProviderViewHolder extends CommonListItemViewHolder<FoodProvide
         } else {
             openTextView.setText("Closed");
         }
+        view.setOnClickListener(listItem.getOnClickListener());
+
+
     }
 }

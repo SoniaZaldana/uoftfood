@@ -2,10 +2,10 @@ package com.uoft.food.Fragments;
 
 
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.text.TextUtils;
@@ -84,10 +84,24 @@ public class HomeFragment extends Fragment {
                 builder.setCampus(foodProvider.getCampus());
             }
 
+            builder.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    navigateToDetailsFragment();
+                }
+            });
+
             listItems.add(builder.build());
         }
 
         return listItems;
     }
 
+    private void navigateToDetailsFragment() {
+        ProviderDetailsFragment newDetailsFragment = new ProviderDetailsFragment();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment, newDetailsFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
 }

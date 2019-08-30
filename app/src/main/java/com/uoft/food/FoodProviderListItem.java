@@ -1,11 +1,14 @@
 package com.uoft.food;
 
+import android.view.View;
+
 public class FoodProviderListItem implements ListItem {
 
     private String name;
     private String campus;
     private String building;
     private boolean open;
+    private View.OnClickListener onClickListener;
 
     public FoodProviderListItem() {
     }
@@ -26,11 +29,16 @@ public class FoodProviderListItem implements ListItem {
         return open;
     }
 
+    public View.OnClickListener getOnClickListener() {
+        return onClickListener;
+    }
+
     public static class Builder {
         private String name;
         private String campus;
         private String building;
         private boolean open;
+        private View.OnClickListener onClickListener;
 
         public Builder setName(String name) {
             this.name = name;
@@ -52,12 +60,18 @@ public class FoodProviderListItem implements ListItem {
             return this;
         }
 
+        public Builder setOnClickListener(View.OnClickListener onClickListener) {
+            this.onClickListener = onClickListener;
+            return this;
+        }
+
         public FoodProviderListItem build() {
             FoodProviderListItem listItem = new FoodProviderListItem();
             listItem.name = this.name;
             listItem.building = this.building;
             listItem.campus = this.campus;
             listItem.open = this.open;
+            listItem.onClickListener = this.onClickListener;
             return listItem;
 
         }
